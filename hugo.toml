@@ -1,4 +1,64 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
+DefaultContentLanguage = "zh"
 title = '垃圾桶学术笔记'
 theme = "diary"
+enableLaTeX = true
+enableGitalk = true
+enableAutoDarkMode=true
+enableReadingTime=true
+
+
+[params]
+cloudflareToken = "your cloudflare web analytics token"
+googleAnalytics = "UA-123-45"
+googleSiteVerification = "xxxx-xxxx"
+googleSearchCode = "Your Search Code"
+favicon = "assets/who.svg"
+
+[params.gitalk]
+  owner = "user"
+  repo = "repo name"
+  client_id = "your client id"
+  client_secret = "your client secret"
+
+[[menu.main]]
+url = "/index.xml"
+name = "RSS Feed"
+weight = 4
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+# Menu configuration
+[[menu.main]]
+url = "/categories"
+name = "Categories"
+weight = 3
+
+[[menu.main]]
+url = "/tags"
+name = "Tags"
+weight = 2
+
+[[menu.main]]
+url = "/posts"
+name = "Archive"
+weight = 1
+
+[taxonomies]
+   category = "categories"
+   tag = "tags"

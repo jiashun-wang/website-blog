@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '垃圾桶学术笔记'
+theme = "diary"

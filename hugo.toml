@@ -1,7 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.chum-bucket.site/'
 languageCode = 'en-us'
 DefaultContentLanguage = "zh"
-title = '垃圾桶学术笔记'
+title = '王司徒学术笔记'
 theme = "diary"
 enableLaTeX = true
 enableGitalk = true
@@ -17,8 +17,8 @@ googleSearchCode = "Your Search Code"
 favicon = "assets/who.svg"
 
 [params.gitalk]
-  owner = "user"
-  repo = "repo name"
+  owner = "jiashun-wang"
+  repo = "website-blog"
   client_id = "your client id"
   client_secret = "your client secret"
 
@@ -55,7 +55,7 @@ name = "Tags"
 weight = 2
 
 [[menu.main]]
-url = "/posts"
+url = "/archive"
 name = "Archive"
 weight = 1
 

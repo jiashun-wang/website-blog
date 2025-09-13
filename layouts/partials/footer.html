@@ -1,13 +1,13 @@
 <footer>
     <p>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">
-            苏ICP备2023101667号
+        © {{ now.Year }} {{ .Site.Title }}
+        {{ with .Site.Params.icp }}
+        <br><a href="https://beian.miit.gov.cn/" target="_blank">{{ . }}</a>
+        {{ end }}
+        {{ with .Site.Params.police }}
+        <br><a href="{{ $.Site.Params.police_link }}" target="_blank" rel="noopener noreferrer">
+            <img src="/images/beian.png" style="vertical-align:middle;"> {{ . }}
         </a>
-    </p>
-    <p>
-        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank"
-            rel="noreferrer">
-            <img src="/images/gongan.png" style="height:16px;vertical-align:middle;" /> 苏公网安备32128102010336号
-        </a>
+        {{ end }}
     </p>
 </footer>

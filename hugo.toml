@@ -1,4 +1,4 @@
-baseURL = 'https://blog.chum-bucket.site/'
+baseURL = 'https://wjs.chum-bucket.site/'
 languageCode = 'zh-cn'
 DefaultContentLanguage = "zh"
 title = '王司徒学术笔记'
